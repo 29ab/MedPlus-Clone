@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medplus.com</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        
+           #product{
+              margin:4%,4%,20%, 4%; 
+            /* border: 1px solid black; */
+            height: 250px;
+            
+            display:inline-flex;
+            grid-template-columns: 10% 10% 10% 10%;
+            grid-gap: 1%;
+            justify-content: center;
+           
+        }
+        button{
+            background-color: #D32F2F;
+            color: white;
+            height: 40px;
+            border-radius: 10%;
+            text-align: center;
+            margin-left: 25%;
+            border: none;
+            cursor: pointer;
+            
+        }
+        #mainDiv{
+            height: 400px;
+           
+            /* border: 1px solid red; */
+            margin: 5%,5%,20%,5%;
+        }
+        p{
+            margin: 4px;
+            text-align: center;
+        }
+        h3{
+            margin-left: 2%;
+        }
+        img{
+            margin-left: 0%;
+         
+        }
+        #prod1:hover{
+            box-shadow: 3px 2px 2px 3px #757575;
+           border-radius: 10%;
+        }
+        #gtcart{
+            float: right;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <a href="cart.html"><button id="gtcart">Go to cart</button></a>
+
+     <a href="dicription.html" ></a>
+
+    <div id="mainDiv">
+        <h3>Top Offers</h3>
+        <div id="product">
+        
+        </div>
+    </div>
+   
+</body>
+</html>
+<script>
+    
+      let prd = [
+          {
+              name: "HORLICS JUNIAR VANILA",
+              size: "1KG REFIL",
+              price: "Rs 440",
+              img:"https://static2.medplusmart.com/products/_71a037_/HORL0062_S.jpg",
+          },
+          {
+              name: "EVERYUTH LEMON FACEWASH",
+              size: "120 ML",
+              price: "Rs 84",
+              img:"https://static2.medplusmart.com/products/_27dd53_/EVER0086_S.jpg",
+          },
+          
+          {
+              name: "HORLICKS WOMEN PLUS",
+              size: "CARAMEL 750GM",
+              price: "Rs 779",
+              img: "https://static2.medplusmart.com/products/_5a29e0_/HORL0082_S.jpg",
+          },
+          {
+              name: "VASLINE ALOE FRESH",
+              size: "400ML LOTION",
+              price: "Rs 375",
+              img: "https://static2.medplusmart.com/products/_422301_/VASE0077_S.jpg",
+          },
+          {
+              name: "PAMPERS PANT NEW BABY",
+              size: "86S",
+              price: "Rs 779",
+              img: "https://static2.medplusmart.com/products/_52269b_/PAMP0087_S.jpg",
+          },
+          {
+              name: "LUPISAFE HAND SANITIZER",
+              size: "100ML",
+              price: "Rs 779",
+              img: "https://static2.medplusmart.com/products/_0f3e57_/LUPI0194_S.jpg",
+          },
+          {
+              name: "LITTLE ANGLE BABY PULL UPS",
+              size: "64 S, L",
+              price: "Rs 440",
+              img:"https://static2.medplusmart.com/products/_c3aa07_/LITT0046_S.jpg",
+          },
+          
+          {
+              name: "NEVIA MEN ACTIVE ORIGINAL",
+              size: "150ML DEODRENT",
+              price: "Rs 168",
+              img: "https://static2.medplusmart.com/products/_52dda11_/NIVE0019_S.jpg",
+          },
+          
+      ];
+
+
+
+      let parent = document.getElementById("product");
+
+   function showProduct(){
+   prd.forEach(function(product){
+
+
+
+   let divs = document.createElement("div")
+
+    // divs.style.boxShadow = "2px 2px 4px #BDBDBD"
+    divs.style.height = "300px"
+    divs.style.padding = "8px"
+    divs.id = "prod1"
+    
+
+   let img = document.createElement("img")
+
+   img.src=product.img
+   img.id = "imgd"
+    
+   img.addEventListener("click", description);
+       
+   
+     
+   let pr_price = document.createElement("p")
+
+   pr_price.textContent = product.price
+
+   let pr_name = document.createElement("p")
+
+   pr_name.textContent = product.name
+
+   let size_name = document.createElement("p")
+
+   size_name.textContent = product.size
+
+   let cart_btn = document.createElement("button")
+
+  cart_btn.innerText = "Add to cart";  
+
+  cart_btn.onclick = function(){
+    addtocart(product)
+};
+
+divs.append(img, pr_name,size_name, pr_price,cart_btn);
+
+parent.append(divs);
+
+
+});
+
+}
+showProduct();
+
+
+
+    if(localStorage.getItem("cart") === null){
+       localStorage.setItem("cart", JSON.stringify([]))
+   }
+
+   function addtocart(p){
+   let pr_cart = JSON.parse(localStorage.getItem("cart"))
+    pr_cart.push(p);
+
+    localStorage.setItem("cart",JSON.stringify(pr_cart));
+
+    //console.log(("pr_cart:",pr_cart));
+
+   }
+
+     function description() {
+        window.location.href = "dicription.html"
+     }
+
+</script>

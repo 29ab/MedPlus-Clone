@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        #div1 {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            margin: 0px 0px;
+            vertical-align: top;
+        }
+
+        #div1_3 {
+            display: flex;
+            flex-wrap: wrap;
+            /* border: 1px solid green; */
+            gap: 20px;
+            margin: 0px 0px 0px 615px;
+        }
+
+        #div1_3>button:nth-child(2) {
+            height: 30px;
+            border: white;
+            background-color: white;
+        }
+
+        #div1_3>button:nth-child(6) {
+
+            height: 30px;
+            color: red;
+            border: 1px solid red;
+            background-color: white;
+        }
+
+        #logo p {
+            padding: 5px 5px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            background-color: #a7170a;
+            border-radius: 5px;
+            margin: 0px 5px;
+        }
+
+        #buttons {
+            background-color: rgba(245, 245, 245, 0.842);
+            margin: 0px 0px;
+        }
+
+        #buttons>button {
+            /* width: 150px; */
+            padding: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            background-color: rgba(245, 245, 245, 0.842);
+            border: #edf2fb;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #lastdiv {
+            background-color: rgba(245, 245, 245, 0.842);
+            margin: 0px 0px;
+        }
+
+        #lastdiv_div2_style {
+            text-align: center;
+        }
+
+        #lastdiv_div3 {
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: 320px 350px 350px;
+            gap: 35px;
+            margin: auto 130px;
+        }
+
+        .lastdiv_A {
+            background-color: white;
+            /* margin: auto 20px; */
+        }
+
+        #Presc {
+            width: 250px;
+            background-color: #e5383b;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            border: 1px solid white;
+            border-radius: 3px;
+            font-size: 14px;
+            padding: 7px;
+            margin: 5px 40px;
+        }
+
+        .text-style {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ul {
+            line-height: 25px;
+        }
+
+        .lastdiv3_red {
+            width: 50px;
+            border: 0.1px solid red;
+            margin: 5px 10px;
+        }
+
+        #locate_button {
+            border-radius: 50%;
+            margin: 0px 0px 10px 10px;
+            border: none;
+        }
+
+        #inputbar {
+            width: 600px;
+            border: 1px solid gray;
+            height: 28px;
+            border-radius: 2px;
+            background-color: rgba(245, 245, 245, 0.842);
+            border: none;
+            /* margin:  0px 20px; */
+        }
+
+        #inputOutDiv {
+            border: 1px solid grey;
+            background-color: rgba(245, 245, 245, 0.842);
+            display: flex;
+            flex-wrap: wrap;
+            height: 30px;
+            margin: 0px 20px;
+        }
+
+        #upload_button {
+            width: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            height: 30px;
+            background-color: rgb(9, 211, 110);
+            border-radius: 3px;
+            font-family: 'Roboto', sans-serif;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <div id="logo">
+            <a style="text-decoration: none;" href="index.html">
+                <p><strong>MedPlus</strong> Mart</p>
+            </a>
+        </div>
+        <div id="div1_3">
+            <p style="margin: 8px 0px; font-size: 14px;">Call 040 - 67006700 for help.!</p>
+            <button style="margin: 1px 0px;">Store Finder</button>
+            <p style="margin: 8px 0px; font-size: 14px;">Download App</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/38/38002.png"
+                style="margin: 2px 0px; width: 20px;height: 20px;">
+            <img src="https://static.thenounproject.com/png/1426926-200.png"
+                style="margin: 2px 0px; width: 20px;height: 20px;">
+            <button style="margin:2px 0px">Sign In/Register</button>
+        </div>
+    </div>
+    <hr style="color: grey;" />
+
+    <div style="display:flex; flex-wrap: wrap;">
+        <button id="locate_button"><img src="https://static.thenounproject.com/png/322194-200.png"
+                style="width:30px;"></button>
+        <div style="margin: 0px 0px 0px 20px">
+            <p style="font-size: 13px;margin: 0px;">6/56,Bhawani Nagar,Moosapet,Hyderabad</p>
+            <p style="font-size: 10px;margin: 0px;">Home Delivery & Store Pickup Available</p>
+        </div>
+        <div id="inputOutDiv">
+            <select style="padding: 0px 5px; border: none;">
+                <option>General Store</option>
+                <option>Pharmacy</option>
+                <option>All Products</option>
+            </select>
+            <input type="text" id="inputbar" placeholder="Search for... general or pharma products" />
+            <button style="height: 30px"><img src="https://static.thenounproject.com/png/729121-200.png"
+                    width="10px"></button>
+        </div>
+        <button id="upload_button">
+            <img src="https://static.thenounproject.com/png/3335101-200.png" width="20px" style="margin: 4px 0px;">
+            <p style="font-size: 14px ;margin: 5px 5px;">Upload</p>
+        </button>
+    </div>
+    <div id="buttons">
+        <button style="margin:5px 20px 5px 5px;">Health Store</button>
+        <button style="margin:5px 20px 5px;">Pharmacy</button>
+        <button style="margin:5px 20px 5px;">Lab Tests</button>
+        <button style="margin:5px 20px 5px;">FlexiRewards</button>
+        <button style="margin:5px 20px 5px;">Promotions</button>
+        <button style="margin:5px 20px 5px;">Healthy</button>
+        <button style="margin:5px 20px 5px;">MedPlus Wallet</button>
+    </div>
+    <div id="lastdiv">
+        <div>
+            <p>Home/Pharmacy</p>
+        </div>
+        <div id="lastdiv_div2_style">
+            <img
+                src="https://static1.medplusmart.com/medplusmart/assets/_327123f268ce0ba8b58c06e2127b1cac_/new_theme/web/images/new/three-ways-to-order.png">
+        </div>
+
+        <div id="lastdiv_div3">
+            <div class="lastdiv_A">
+                <img src="https://static.thenounproject.com/png/2730843-200.png"
+                    style="width: 100px; margin: 10px 100px;">
+                <div style="margin:auto 15px; font-size: 20px">Buy Online</div>
+                <div class="lastdiv3_red"></div>
+                <div>
+                    <ul class="text-style">
+                        <li>Search and select the medicines you want</li>
+                        <li>Upload your prescription at check out</li>
+                        <li>Choose home delivery or store pick up</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lastdiv_A">
+                <img src="https://static.thenounproject.com/png/981352-200.png"
+                    style="width: 100px; margin: 10px 100px;">
+                <div style="margin:auto 15px; font-size: 20px">Click and Pick</div>
+                <div class="lastdiv3_red"></div>
+                <div>
+                    <ul class="text-style">
+                        <li>Search and select the Medicines you want</li>
+                        <li>Select the MedPlus store where you wish to pick up the order</li>
+                        <li>Show the prescription at the store and collect your medicine</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lastdiv_A">
+                <img src="https://static.thenounproject.com/png/4275094-200.png"
+                    style="width: 100px; margin: 10px 120px;">
+                <div style="margin:auto 15px; font-size: 20px">Receive a Call Back</div>
+                <div class="lastdiv3_red"></div>
+                <div>
+                    <ul class="text-style">
+                        <li>Our customer Representative will call you and confirm the order</li>
+                    </ul>
+                    <button id="Presc">Upload your prescription</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div>
+            <p>Current offer</p>
+            <div></div>
+            <div>
+                <p>Up to</p>
+                <div>
+
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+
+</html>

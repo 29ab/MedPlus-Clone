@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-discription</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .wrapper {
+            width: 90%;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .text {
+            flex-basis: 45%;
+        }
+
+        #main-img:hover {
+
+            opacity: 1;
+        }
+
+        .brand {
+            background-color: #546E7A;
+            width: fit-content;
+            color: #fff;
+            font-size: 12px;
+            padding: 2px 5px;
+        }
+
+        h2 {
+            font-size: 35px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .reviw {
+            background-color: green;
+            display: inline-block;
+            color: #fff;
+            border-radius: 1px;
+            font-size: 15px;
+        }
+
+        .reviw .fa {
+            counter-reset: #fff;
+        }
+
+        .price {
+            color: rgb(29, 28, 28);
+            font-size: 26px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+
+        .price-box {
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            width: 30px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        button {
+            width: 130px;
+            columns: #fff;
+            font-size: 15px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            cursor: pointer;
+            background-color: #fe980f;
+            margin-top: 50px;
+        }
+
+        button .fa {
+            margin-right: 10px;
+            /* */
+        }
+
+        .buy {
+            background-color: rgb(201, 97, 57);
+        }
+
+        #gtcart {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="container">
+        <a href="cart.html"><button id="gtcart">Go to cart</button></a>
+        <div class="wrapper">
+
+            <div class="prod_box">
+                <div class="images">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/kh0vonk0/energy-sport-drink-mix/p/w/d/400-women-s-plus-chocolate-carton-horlicks-original-imafx4pjzwxsgnem.jpeg?q=70"
+                        id="main-img">
+                </div>
+            </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand">
+                        HORLICKS WOMENS PLUS</p>
+                    <h2 class="name">HORLICKS WOMENS PLUS CARAMEL 750GM</h2>
+                    <p class="origin"> Country of origin: INDIA</p>
+                    <div class="reviw">
+                        <span>Rating-4.7</span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="price-box">
+                        <p class="price">&#8377; 450</p>
+                        <strike>&#8377; 540</strike>
+                    </div>
+                    <p>Quentity <input type="text" value="1"></p>
+                    <a href="cart.html"><button>
+                        <span class="fa fa-shoping-cart"></span>
+                        Add to Cart
+                    </button></a>
+                    <button class="buy">
+                        <span class="fa fa-shoping-cart"></span>
+                        Buy Now
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+</script>

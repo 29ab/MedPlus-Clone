@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* input{
+        margin: 8%;
+    } */
+    #main {
+        width: fit-content;
+        /* border: 2px solid red; */
+        height: fit-content;
+        margin: auto;
+        padding: 20px;
+        background-color: lightblue;
+        /* font-size: 25px; */
+        border-radius: 50px;
+    }
+
+    h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    form {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    label,
+    input {
+        font-size: 25px;
+        border-radius: 10px;
+        /* font-weight: bold; */
+        margin: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    #name,
+    #email {
+        margin-left: 33px;
+    }
+
+    #password {
+        margin-left: -5px;
+    }
+
+    /* number {
+        -moz-appearance: textfield;
+    } */
+</style>
+
+<body>
+    <div id="main">
+        <h1>Sign up</h1>
+        <form onsubmit="signup(event)" id="myForm" action="">
+            <div>
+                <label>Name:</label>
+                <input type="text" id="name" placeholder="Name" />
+            </div>
+            <div>
+                <label>Contact:</label>
+                <input type="number" id="number" placeholder="contact number">
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="text" id="email" placeholder="Email" />
+            </div>
+
+            <div>
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="password" />
+            </div>
+            <input type="submit" />
+        </form>
+    </div>
+</body>
+
+</html>
+<script>
+    function signup(e) {
+        e.preventDefault();
+
+        let myForm = document.getElementById("myForm");
+        // console.log("myForm:",myForm);
+
+        let name = myForm.name.value;
+        let number = myForm.number.value;
+        let email = myForm.email.value;
+        let password = myForm.password.value;
+        //console.log("data:", name, email,password);
+
+        if (localStorage.getItem("users") === null) {
+            localStorage.setItem("users", JSON.stringify([]));
+        }
+
+        //1. send user data
+
+        let user = {
+            name,
+            number,
+            email,
+            password
+        }
+        // console.log("user:",name,email,password);
+        let arr = JSON.parse(localStorage.getItem("users"));
+
+        //2. push new user to array
+
+        arr.push(user);//added a new user
+
+        localStorage.setItem("users", JSON.stringify(arr));
+
+        document.getElementById('name').value = '';
+        document.getElementById('number').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
+        window.location.href = "index.html";
+    }
+</script>

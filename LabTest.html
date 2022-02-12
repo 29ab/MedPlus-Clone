@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-Test</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #div1 {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            margin: 10px 0px;
+            vertical-align: top;
+        }
+
+        #div1_3 {
+            /* border: 1px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 0px 0px 0px 615px;
+        }
+
+        #div1_3>button:nth-child(2) {
+            height: 30px;
+            border: white;
+            background-color: white;
+        }
+
+        #div1_3>button:nth-child(6) {
+
+            height: 30px;
+            color: red;
+            border: 1px solid red;
+            background-color: white;
+        }
+
+        #logo p {
+            padding: 5px 5px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            background-color: #a7170a;
+            border-radius: 5px;
+            margin: 0px 5px;
+        }
+
+        #First_part {
+            display: flex;
+            /* border:1px solid black; */
+            flex-wrap: wrap;
+            margin: 25px auto;
+        }
+
+        #upload {
+            width: 450px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding: 25px;
+            margin: 20px 0px 20px 100px;
+        }
+
+        #upload>button {
+            color: white;
+            background-color: rgb(9, 211, 110);
+        }
+
+        #sec_part {
+            width: 600px;
+            /* border: 1px solid red; */
+            text-align: center;
+            padding: 10px;
+            margin: 20px 20px;
+        }
+
+        #sec_part>h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 30px;
+            margin: 0px;
+        }
+
+        #_4button {
+            /* height: 60px; */
+            display: grid;
+            grid-template-columns: 280px 280px;
+            font-family: 'Roboto', sans-serif;
+            gap: 0px;
+            margin: 20px 20px;
+        }
+
+        .text-left {
+            text-align: left;
+            /* background-color: white; */
+            /* border: grey; */
+            padding: 5px;
+            margin: 0px;
+        }
+
+        .gap0 {
+            margin: 2px;
+        }
+
+        #Uplodbut {
+            width: 310px;
+            border: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            border-radius: 3px;
+            padding: 8px 0px;
+        }
+
+        #background_blue {
+
+            background-color: #1d3164;
+            height: 70px;
+        }
+
+        #second_last {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #locate_button {
+            border-radius: 50%;
+            margin: 0px 0px 10px 10px;
+            border: none;
+        }
+
+        #inputbar {
+            width: 600px;
+            border: none;
+            height: 28px;
+            border-radius: 2px;
+            background-color: rgba(245, 245, 245, 0.842);
+            border: none;
+            /* margin:  0px 20px; */
+        }
+
+        #inputOutDiv:hover {
+            box-shadow: 0 0 3px 3px rgba(78, 210, 243, 0.2)
+        }
+
+        #inputOutDiv {
+            border: 1px solid grey;
+            background-color: rgba(245, 245, 245, 0.842);
+            display: flex;
+            flex-wrap: wrap;
+            height: 30px;
+            margin: 0px 0px 0px 40px;
+        }
+
+        #search_button {
+            width: 100px;
+            display: flex;
+            color: white;
+            font-size: 15px;
+            height: 31px;
+            background-color: black;
+            border-radius: 3px;
+            font-family: 'Roboto', sans-serif;
+            border: none;
+        }
+
+        #mainBox {
+            margin: 0 20px 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainBox">
+        <div id="div1">
+            <div id="logo">
+                <a style="text-decoration: none;" href="index.html">
+                    <p><strong>MedPlus</strong> Mart</p>
+                </a>
+            </div>
+            <div id="div1_3">
+                <p style="margin: 8px 0px; font-size: 14px;">Call 040 - 67006700 for help.!</p>
+                <button style="margin: 1px 0px;">Store Finder</button>
+                <p style="margin: 8px 0px; font-size: 14px;">Download App</p>
+                <img src="https://cdn-icons-png.flaticon.com/512/38/38002.png"
+                    style="margin: 2px 0px; width: 20px;height: 20px;">
+                <img src="https://static.thenounproject.com/png/1426926-200.png"
+                    style="margin: 2px 0px; width: 20px;height: 20px;">
+                <button style="margin:2px 0px">Sign In/Register</button>
+            </div>
+        </div>
+
+        <div style="display:flex; flex-wrap: wrap;">
+            <button id="locate_button"><img src="https://static.thenounproject.com/png/322194-200.png"
+                    style="width:30px;"></button>
+            <div style="margin: 0px 0px 0px 20px">
+                <p style="font-size: 13px;margin: 0px;">6/56,Bhawani Nagar,Moosapet,Hyderabad</p>
+                <p style="font-size: 10px;margin: 0px;">Home Delivery & Store Pickup Available</p>
+            </div>
+            <div id="inputOutDiv">
+                <img src="https://static.thenounproject.com/png/1823733-200.png" width="25px" style="margin: 5px;">
+                <input type="text" id="inputbar" placeholder="Search lab test or Health package" />
+            </div>
+            <button id="search_button">
+                <p style="margin: 5px 18px;">SEARCH</p>
+            </button>
+        </div>
+
+        <div id="First_part">
+            <div id="upload">
+                <div></div>
+                <img
+                    src="data:image/webp;base64,UklGRlYIAABXRUJQVlA4TEoIAAAvZ0AYEP8nMZJt1arW3rg75B8FWbnL2c2XIGTFtu1a0TqJnAzgXwdC+MJChu41HLdtJEly1RzPzT+ejWh/c2yX5v8HDgkwSARQSIAQCogUYwQQEqAQSAQEIZAIgX8flQAFEJqOqRJNBRKBRCA0tP4PLfIXQGgoIAoBNB3zfwypBAgFEMiQCglUaDoEIaASoammYgQEIYTAP/33/1dQITSEVFMxpgMkwUCqaqyM5FATlVYjUvz0JVCxJC+JUIlayIj1L+SlJZYUM4QSpRAJMhCRDACSAMkoMUEyUBRBJwo2Ek7LQE9F61Xqd9lM29677b3b2afP27Kx28ZqxynrfQT2Lk5P99o6h5qxMVuv1rNsrNazbV8cepati13PVkHPUjN6thpRI2pAXjd3sfn0cf6327gptVEn+sTX1Pfvktfl8+2Fhhg/XZaxurz/Xu4+f77//S1j7/lw+/IlAklhEYQqAAFRBpJIYShRBSCRRCCRIJAoQoTQzuXOYA///9Vpq33DGUs6Qkm7ClqlBEnZyG6dhSI1Rt3dW5wMqdDSTrnUXXBn7u4LlnNd6xp6gzOhyuBcydFfTq/99T0R/Z+ARwSrF9sYktc/4rzmfU96aMk98mOc04Q1aYHkvNjmOGeZvwXIGqdvjnOSZQppqG+Ne0igvnXWQwKDfop8SGDoT5EPCQz9KfIhgaE/RcrdeDYM/SlS3pLnceCTd8NlbXyTJwca74Y7h5tBeKBKDFxbGjVcBTjYU1Eibk91ivEnhB8aIIrKlN2iB78ehtUpnNLz/zuMeTwzXRBdt+dJG+NE/cfxHAuI+NQ4ab2cSMI//V7EPwKr3PzunIh/lbOrn3zM98NlrBsYRfzYIc5y/V7qMqJXZPw9EIQScrF9PJA+Z59oA02i37yO+MldF+K8GdHCMkTf+baivNWBxGvFk/B35xCvtjp4pXYyJDat14rik06Q5rUtek8SQzLTRfAy9xYRNOGYC5Kp7fUTNKpp44BlBE1PBVJPGoSojywGJOBPf1CU39gdUog5ISjqAEWEo7+TpU8HPlPsknZ1ONdZA6/H/CWd1CpI7R/soyLH7s9LYn+7AO/4u+1VPxfHqiX7hdnOSHw/O/ZxKcLa3716Di9eezPbQxpNsm2O3lPiMVH7ioLFG9194xzrxXd2UpIkZ+uAQFVsR7BoOz86x3mxOlKK8TYdkDmr1EOkET9fOneeDW/8UgrzbCBUlXZgHveaFj5T3z7/bvUVtitMPwlaAkhB99LsjZypbXzmvItVu6qvsCDjKQHqiMHge3pg97fziaqqtFj3Vl9xuMy4OWie20iJoZCD8465iUCZKyw0WvdWXzmHeP0wIKIm642CeIrHoI4w4qjMBGFUQomFRkTr3uor5y68GQuImqw36i0F8RTHoNe6xxKHg2wzhVAJJRaa1ZpTfeXdg2pATdYb9TRaCuMplkGv7ak0kIfBHYvUvKiEEgvNac35/rgXoCbrjXoaES2FCRQgDnptj7XEGTAg17Y6avyMH8YpyrrsCdv+9vlXdfTXiiNack4PAk3WG/U0q6UwgYJBr+2x0s6BLsa16XkvH1IUJfeAgrnKK0//ZXuu42t9L7142jfrjXqa01KSMPS1PVbaWaQcuPzuwTuv19M8LeW3cqy0DCGGd79eYeG3y0rLE67bnVNu4VLKc6y0XA1/UJ9TbuEoybHSsoVd31pzXuf42krLWME3tPU7Dp6EPUqOmOQMn5NexGDv0aSp7k7SGkhGUHpvWkyw1xN+xnn7etYMdIYv2/qRoF5zb7EOuMektURIVLp/N+suzucR99+dBAR47EM/4D+haRUlSf7K6cIjvYGlVCOFNjdVA0L9TqyT5IQBxNYyIKXKnO4Kwn1s0fITmd8fxAzr9nGOUo14/WwTQdzNKc6Bingz81RcAdPjxqu5vHt8ZWZfJLAPTGcQsSmcA9PmS6fR8n2MLY4STccMYHM7wrCbPDUsEdnilTFinmUD8Y3HkH0xw7M33h0QR/RQop2c7Omo03LrzKU7JIs2s7kU8UHc5wr4KDNYtBMGEKhJ3xed4eArxex4QHRd2X2fQcT8+X1sGAGIbaNJ0WZvdzOxLN4hwaxkQFzCsOaPcA3vY9sMiD3DCPHITdeA6dQmxH02/2DxTDsAsYwlf1SyIS68j2UjoDvjTsagIymugKZD8xAj3IHRiqZvobjSt9kNzAobyxTAsWUg+klePvmbKUA0ZQCrBFSnHnA5C6LdwLBvowAXJolX+gyPkbZVKiAD41cAqtfc43drmQbQ5Vi4eEV2fw596yJgJSGksz8gUlpHN9QqiuIGjhPL1OKd2NQaxBLa8SyQg+lrQVT10RkggWFmhxEQle5IIGl4t1GUtfsoScDUPRnC74UDUWhq04vwrN0XpMHx3fHdRuBWxe4gAeNajEKoRa1BIBU+dSQUOF1mlvW99Ns/g2u4VDj13jI3XsMzXxsD0vFVJZV/2Ujjr36b+golFY7e0bTQj40ybO1ZpwWioitqaURsfPGQB0iGKqO570TKiqWr0+2ta0eA1ILOfvFZHY2NL9b8GghARDdj7NLli6OCKJBeyACmYVdNXeOLNXW1AWSQnL/YxB0zHRcwdOOLNQrW0Z8my03ZoQxOcwran+v9lm584dU6GnMWyU3pdODLeMbvphGtNH73YJTMDWl6v5FG/K5kOSCjk5Uzc/n0Z9xg5JHy9z544cESCrAlQFbSzXyCbgEiNX75+rhhgIjm2bIyrYnisXYL8B9v08lJv6ZELn3PSAGYkq2TEQzr3cgWZIsDoZoUZXaATiubz9wrWmUcbtzSEwsijje3MDLbe2K1HwgG">
+                <p>Not sure what test to select?</p>
+                <button id="Uplodbut">
+                    <h3 style="font-size:17px; margin: 2px;">UPLOAD DOCTORS PRESCRIPTION</h3>
+                    <p style="margin: 4px;">and we will call you back</p>
+                </button>
+            </div>
+            <div id="sec_part">
+                <h3>Flat 50% Off on Health Packagesand Flat 70% Off on Tests</h3>
+                <div style="margin: 20px auto">
+                    <p class="gap0" style="text-align: right;margin: 0px 35px auto; font-size: 14px;">View all</p>
+
+                    <div id="_4button">
+                        <button class="text-left">
+                            <h5 class="gap0">MASTER HEALTH CHECKUP SILVER</h5>
+                            <P class="gap0">Includes 68 Parameters</P>
+                        </button>
+                        <button class="text-left">
+                            <h5 class="gap0">MASTER HEALTH CHECKUP BASIC</h5>
+                            <P class="gap0">Includes 55 Parameters</P>
+                        </button>
+                        <button class="text-left">
+                            <h5 class="gap0">MASTER HEALTH CHECKUP GOLD</h5>
+                            <p class="gap0">Includes 73 Parameters</p>
+                        </button>
+                        <button class="text-left">
+                            <h5 class="gap0">MASTER HEALTH CHECKUP PLATINUM</h5>
+                            <p class="gap0">Includes 86 Parameters</p>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div style="background-color: lightblue;">
+            <div id="background_blue">
+                <img src="https://www.medplusmart.com/images/lab/xstatic-bar-icns.png.pagespeed.ic.dAJmvqK9Wa.webp"
+                    style="height: 70px; margin: auto 320px;">
+            </div>
+            <div id="second_last">
+                <div style="width:800px">
+                    <div>
+                        <h2 style="font-size: 50px; font-family: 'Roboto', sans-serif; font-weight: 300;">FAQ</h2>
+                    </div>
+                    <div style="margin: 0px 10px;">
+                        <div style="margin:20px auto ">
+                            <p style="font-family: 'Roboto', sans-serif;margin: 0px;">Why should I get my tests done at
+                                MedPlusMart?</p>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px; margin:5px auto;">MedPlusMart
+                                is a
+                                quality laboratory with state of the art testing equipment and technology. Our lab has
+                                rigid
+                                quality protocols to ensure your tests are as accurate as possible. The entire process
+                                from
+                                sample collection to report delivery are handled by our own staff to ensure seamless
+                                service. To top it all, we offer the convenience of home sample pick up and report
+                                delivery
+                                while doing it all at a fraction of cost that other comparable labs charge.</p>
+                        </div>
+                        <div style="margin:20px auto ">
+                            <p style="font-family: 'Roboto', sans-serif;margin: 0px;">What tests do you offer?</p>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px; margin:5px auto;">We have an
+                                extensive catalogue of tests covering a majority of the routine testing needs for most
+                                patients along with a choice of several preventive health care packages. Please browse
+                                the
+                                test list or search for the name of the test you need. If you are unsure what the doctor
+                                ordered, please upload your prescription and our customer care team will help you select
+                                the
+                                right tests.
+                            </p>
+                            <button
+                                style="width: 70px; height: 30px;width: 60px; background-color:lightblue; border: 1px solid blue; margin: 20px auto;">more
+                                ></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.medplusmart.com/lab/images/lab/xfaq.jpg.pagespeed.ic.cqT8G3860T.webp"
+                        style="width: 400px;margin: 30px 0px 0px 120px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

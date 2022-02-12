@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: whitesmoke;
+    }
+
+    #ig {
+        width: 70%;
+
+
+        margin: 5% 4% 3% 4%;
+    }
+
+    .pic {
+
+
+        box-sizing: border-box;
+        margin: 2%;
+        width: 310px;
+        display: inline-block;
+    }
+
+    .heading {
+        display: inline-block;
+
+        margin-bottom: 100px;
+
+    }
+
+    .btn {
+        margin-top: 40px;
+        margin-bottom: 80px;
+        color: whitesmoke;
+        padding: 12px 28px;
+    }
+
+    .nm {
+        text-decoration: underline;
+    }
+    #decPage{
+        width: 95%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <div id="decPage">
+        <h1>Product Description</h1>
+        <div id="ig">
+    
+            <div class="pic">
+                <img src="https://static2.medplusmart.com/products/_f9b545_/JOYT0007_S.jpg" width="300px">
+            </div>
+            <div class="heading">
+                <p class="nm">JOYTECH</p>
+                <h2>JOYTECH INFRARED FOREHEAD THERMOMETER</h2>
+    
+                <h2>MRP = 2799</h2>
+                <p>Country of Origin: India</p>
+                <div class="btn">.</div>
+                <div>.</div>
+            </div>
+            <div>.</div>
+    
+        </div>
+    </div>
+   
+
+</body>
+
+</html>
+
+
+<script>
+
+
+    function addtoCart(p) {
+        let product_cart = JSON.parse(localStorage.getItem("bs_cart"));
+
+        product_cart.push(p);
+
+        localStorage.setItem("bs_cart", JSON.stringify(product_cart));
+    }
+
+</script>

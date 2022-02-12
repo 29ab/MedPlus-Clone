@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        margin: auto;
+    }
+
+    form div {
+        margin: 20px;
+    }
+
+    #main {
+        width: fit-content;
+        /* border: 2px solid red; */
+        height: fit-content;
+        margin: 10% auto;
+        padding: 20px;
+        background-color: lightblue;
+        border-radius: 50px;
+    }
+
+    h1 {
+        margin: auto;
+    }
+
+    label,
+    input {
+        font-size: 25px;
+        border-radius: 10px;
+        /* font-weight: bold; */
+    }
+
+    #email {
+        margin-left: 32px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <h1>login</h1><br>
+        <form id="myForm" onsubmit="signin(event)" action="">
+            <div>
+                <label>Email:</label>
+                <input type="text" id="email" placeholder="Email" />
+            </div>
+            <div>
+                <label>password:</label>
+                <input type="password" id="password" placeholder="Password" />
+            </div>
+            <input type="submit" />
+        </form>
+    </div>
+</body>
+
+</html>
+<script>
+    function signin(e) {
+        e.preventDefault();
+        let myForm = document.getElementById("myForm");
+        // console.log("myForm:",myForm);
+
+        let email = myForm.email.value;
+        let password = myForm.password.value;
+        //console.log("data:", name, email,password);
+
+        let all_users = JSON.parse(localStorage.getItem("users"));
+
+
+        all_users.forEach(function (user) {
+            if (email === user.email && password === user.password) {
+                // alert("logged in successfully");
+                window.location.href = "index.html";
+            } else {
+                alert("please enter your vaild email and password");
+            }
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+        });
+    }
+
+</script>
